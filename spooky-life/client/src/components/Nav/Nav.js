@@ -4,7 +4,7 @@ import "./nav.css";
 const Nav = () => (
   <nav className="navbar navbar-expand-lg navbar-dark">
     <a className="navbar-brand" href="/">
-      React Reading List
+      Haunted Houses
     </a>
   </nav>
 );
