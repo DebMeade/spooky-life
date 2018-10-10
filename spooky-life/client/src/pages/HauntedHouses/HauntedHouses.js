@@ -1,57 +1,47 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import Jumbotron from "../../components/Jumbotron";
+import Cards from "../../components/Cards";
 // import API from "../../utils/API";
 
-class hauntedHouses extends Component {
+class HauntedHouses extends Component {
   state = {
-    houses: [],
+    houses: [{ name: "Lil Scrape's House", street: "123 Yo Mamma Lane", city: "Rough Life", phone: "123-456-7890", link: "www.google.com" },
+    { name: "Lil Scrape's House 2 ", street: "123 Yo Mamma Lane", city: "Rough Life", phone: "123-456-7890", link: "www.google.com" }],
     name: "",
-    rating: "",
-    location: "",
+    street: "",
+    city: "",
     phone: "",
-    url: ""
+    link: ""
   };
 
-  // componentDidMount() {
-  //   this.loadHauntedHouses();
-  // }
-
-  // loadHauntedHouses = () => {
-  //   API.getHauntedHouses()
-  //   .then(res => 
-  //     this.setState({ houses: res.data, name: "", rating: "", location: "", phone: "", url: "" }))
-  //   .catch(err => console.log(err));
-  // };
-
-  // //below is if we want users to be able to add a hunted house
-  // handleFormSubmit = event => {
-  //   event.preventDefault();
-  //   if (this.state.name && this.state.location && this.state.phone && this.state.url) {
-  //     API.saveHauntedHouse ({
-  //       name: this.state.name,
-  //       location: this.state.location,
-  //       phone: this.state.phone
-  //     })
-  //     .then(res => this.loadHauntedHouses())
-  //     .catch(err => console.log(err));
-  //   }
-  // };
-
-
-  //printing info to page
   render() {
     return (
-      // <Container>
+
+      <Fragment>
+
         <Jumbotron>
           <h1>Haunted Houses</h1>
         </Jumbotron>
-      // </Container>
+
+
+        {this.state.houses.map(house => (
+          <Cards
+            name={house.name}
+            street={house.street}
+            city={house.city}
+            phone={house.phone}
+            link={house.link}
+          />
+        ))}
+
+        ))
+
+          </Fragment>
 
     );
+
   }
-
-
 
 }
 
-export default hauntedHouses;
+export default HauntedHouses;
