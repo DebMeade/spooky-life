@@ -1,4 +1,12 @@
-.navbar-brand{
+.link {
+    color: white;
+    float: right;
+    font-family: 'Creepster', cursive;
+    font-size: 20pt;
+    opacity: 0.85;
+}
+
+.navbar-brand {
     font-family: 'Creepster', cursive;
     font-size: 40pt;
     opacity: 0.85;
