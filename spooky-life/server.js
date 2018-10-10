@@ -1,7 +1,16 @@
 const express = require("express");
+var path = require('path');
+var cookieParser = require('cookie-parser');
 const bodyParser = require("body-parser");
+var exphbs = require('express-handlebars');
+var expressValidator = require('express-validator');
+var flash = require('connect-flash');
+const session = require('express-session');
+const passport = require('passport');
+const LocalStrategy = require('passport-local').Strategy;
+// const mongo = require('mongodb');
 const mongoose = require("mongoose");
-// const routes = require("./routes");
+const routes = require("./routes/index");
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -17,6 +26,7 @@ if (process.env.NODE_ENV === "production") {
 
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/spookyLife");
+var db = mongoose.connection;
 
 // Start the API server
 app.listen(PORT, function() {

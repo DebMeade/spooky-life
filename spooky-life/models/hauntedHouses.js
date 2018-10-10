@@ -6,7 +6,7 @@ const housesSchema = new Schema ({
   rating: { type: String, required: true },
   location: { type: String, required: true },
   phone: { type: String, required: true },
-  url: { url: String, required: true },
+  url: { type: String, required: true },
 });
 
 const HauntedHouses = mongoose.model("HauntedHouses", housesSchema);
