@@ -6,6 +6,7 @@ const Nav = () => (
     <a className="navbar-brand" href="/">
       Haunted Houses
     </a>
+      <a className="link" href="/">Login</a>
   </nav>
 );
 
