@@ -6,7 +6,7 @@ export default {
     return axios.get("/api/hauntedhouses");
   }
 
-  saveHauntedHouse: function() {
-    return axios.post("/api/hauntedhouses", houseData);
-  }
+  // saveHauntedHouse: function() {
+  //   return axios.post("/api/hauntedhouses", houseData);
+  // }
 };
