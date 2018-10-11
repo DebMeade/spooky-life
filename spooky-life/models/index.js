@@ -1,4 +1,4 @@
 module.exports = {
-    user: require("./user"),
-    hauntedHouses: require("./hauntedHouses")
+    // user: require("./user"),
+    HauntedHouses: require("./HauntedHouses")
   };
