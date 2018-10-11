@@ -1,14 +1,25 @@
 .card {
-    border: 2px solid white;
+    background-color: black;
+    border: 2px solid orangered;
     border-radius: 0.6rem;
     box-shadow: 0px 11px 35px -4px white;
+    color: white;
+    float: left;
     font-family: 'Creepster', cursive;
     font-size: 15pt;
+    margin-right: 20px;
+    padding: 5px;
+    width: 20%;
+}
+
+.card-body {
+    text-align: center;
 }
 
 .card-img-top {
+    border-radius: 0.6rem;
     height: 200px;
+    margin: 0 auto;
     overflow: hidden;
     width: 200px;
 }
-
