@@ -2,6 +2,8 @@ import React, { Component, Fragment } from "react";
 import Jumbotron from "../../components/Jumbotron";
 import Cards from "../../components/Cards";
 import API from "../../utils/API";
+import "./haunted.css";
+
 
 class HauntedHouses extends Component {
   state = {
@@ -23,41 +25,41 @@ class HauntedHouses extends Component {
   loadHauntedHouses = () => {
     // console.log("ONE")
     API.getHauntedHouses()
-      .then(res => 
+      .then(res =>
         // console.log(res)
         this.setState({ houses: res.data, name: "", street: "", city: "", phone: "", link: "" })
       )
       .catch(err => console.log(err))
-    };
+  };
 
-    render() {
-      return (
+  render() {
+    return (
+      <Fragment>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12 spooky">
+              <Jumbotron>
+                <h1>Haunted Houses</h1>
+              </Jumbotron>
+            </div>
+          </div>
 
-        <Fragment>
-
-          <Jumbotron>
-            <h1>Haunted Houses</h1>
-          </Jumbotron>
-
-
-          {this.state.houses.map(house => (
-            <Cards
-              name={house.name}
-              street={house.street}
-              city={house.city}
-              phone={house.phone}
-              link={house.link}
-            />
-          ))}
-
-          ))
-  
-          </Fragment>
-
-      );
-
-    }
-
+          <div className="row d-flex justify-content-center">
+            {this.state.houses.map(house => (
+              <Cards
+                name={house.name}
+                street={house.street}
+                city={house.city}
+                phone={house.phone}
+                link={house.link}
+              />
+            ))}
+            ))
+          </div>
+        </div>
+      </Fragment>
+    );
   }
+}
 
-  export default HauntedHouses;
+export default HauntedHouses;
