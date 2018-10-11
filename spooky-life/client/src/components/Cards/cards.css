@@ -7,7 +7,9 @@
     float: left;
     font-family: 'Creepster', cursive;
     font-size: 15pt;
+     opacity: 0.85;
     margin-right: 20px;
+    margin-bottom: 20px;
     padding: 5px;
     width: 20%;
 }
@@ -22,4 +24,8 @@
     margin: 0 auto;
     overflow: hidden;
     width: 200px;
+}
+
+.card-title {
+    font-family: 'Creepster', cursive;
 }
