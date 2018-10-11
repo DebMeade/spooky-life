@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import Jumbotron from "../../components/Jumbotron";
 import Cards from "../../components/Cards";
-// import API from "../../utils/API";
+import API from "../../utils/API";
 
 class HauntedHouses extends Component {
   state = {
@@ -13,6 +13,18 @@ class HauntedHouses extends Component {
     phone: "",
     link: ""
   };
+
+  componenetDidMount() {
+    this.loadHauntedHouses(); 
+    }
+
+    loadHauntedHouses = () => {
+      API.getHauntedHouses()
+      .then(res =>
+        this.setState({ houses: res.data, name: "", street: "", city: "", phone: "", link: ""})
+        )
+        .catch(err => console.log(err));
+    };
 
   render() {
     return (
