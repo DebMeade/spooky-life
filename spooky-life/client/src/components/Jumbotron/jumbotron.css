@@ -6,3 +6,7 @@
     height: 100%;
     width: 100%; 
 }
+
+.custom {
+  cursor: url(icons8-jack-o\'-lantern-48.png), auto;
+}
