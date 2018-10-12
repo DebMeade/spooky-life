@@ -1,0 +1,16 @@
+.fas fa-ghost {
+    color: white;
+    font-size: 15pt;
+}
+
+footer {
+    color: white;
+    font-family: 'Creepster', cursive;
+    font-size: 15pt;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.spooky {
+    padding: 0 !important;
+}
