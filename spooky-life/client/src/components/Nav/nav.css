@@ -15,3 +15,7 @@ a:hover {
     font-size: 30pt;
     opacity: 0.85;
 }
+
+.custom {
+  cursor: url(icons8-jack-o\'-lantern-48.png), auto;
+}
