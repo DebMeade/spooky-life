@@ -6,12 +6,12 @@ a:hover {
     color: white;
     float: right;
     font-family: 'Creepster', cursive;
-    font-size: 20pt;
+    font-size: 30pt;
     opacity: 0.85;
 }
 
 .navbar-brand {
     font-family: 'Creepster', cursive;
-    font-size: 40pt;
+    font-size: 30pt;
     opacity: 0.85;
 }
