@@ -10,7 +10,7 @@ const Cards = (props) => (
                 <p className="card-title custom">{props.street}</p>
                 <p className="card-title custom">{props.city}</p>
                 <p className="card-title custom">{props.phone}</p>
-                <p className="card-title custom">{props.link}</p>
+                <a className="card-title custom" href={props.link}>Visit Website</a>
                 {/* <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> */}
             </div>
     </div>
