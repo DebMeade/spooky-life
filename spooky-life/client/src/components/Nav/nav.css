@@ -2,20 +2,28 @@ a:hover {
     color: orangered;
 }
 
+.flex {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .link {
     color: white;
-    float: right;
+    /* float: right; */
     font-family: 'Creepster', cursive;
-    font-size: 30pt;
+    font-size: 40pt;
     opacity: 0.85;
-}
+} 
 
 .navbar-brand {
     font-family: 'Creepster', cursive;
-    font-size: 30pt;
+    font-size: 40pt;
     opacity: 0.85;
 }
 
 .custom {
   cursor: url(icons8-jack-o\'-lantern-48.png), auto;
 }
+
