@@ -39,7 +39,6 @@ class HauntedHouses extends Component {
           <div className="row">
             <div className="col-md-12 spooky">
               <Jumbotron>
-                <h1>Haunted Houses</h1>
               </Jumbotron>
             </div>
           </div>
@@ -56,6 +55,9 @@ class HauntedHouses extends Component {
             ))}
             ))
           </div>
+
+            <footer><i class="fas fa-ghost"></i> Created By: Debbie Meade, Jamie DeHaan & Joanna Yang <i class="fas fa-ghost"></i></footer>
+        
         </div>
       </Fragment>
     );
