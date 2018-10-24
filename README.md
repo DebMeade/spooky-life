@@ -4,5 +4,5 @@ Technologies Used: Bootstrap, CSShake, Express, Font Awesome, MongoDB, Mongoose,
 
 This app is deployed on Heroku. 
 
-LINK HERE
+https://frozen-cliffs-62376.herokuapp.com/
 
